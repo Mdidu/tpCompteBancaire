@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:useBean id="CompteBean" class="comptes.Compte" type="comptes.Compte" scope="session" />
+	<jsp:useBean id="CompteBean" class="persistance.entities.Compte" type="persistance.entities.Compte" scope="session" />
 
 	<jsp:setProperty property="*" name="CompteBean" />
 	Le solde de <jsp:getProperty property="proprietaire" name="CompteBean"/> est 

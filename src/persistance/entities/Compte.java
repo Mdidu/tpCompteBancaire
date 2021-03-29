@@ -1,4 +1,4 @@
-package comptes;
+package persistance.entities;
 
 public class Compte {
 	private int numCompte;
