@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,10 +8,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:useBean id="CompteBean" class="persistance.entities.Compte" type="persistance.entities.Compte" scope="session" />
-
-	<jsp:setProperty property="*" name="CompteBean" />
-	Le solde de <jsp:getProperty property="proprietaire" name="CompteBean"/> est 
-	<jsp:getProperty property="solde" name="CompteBean"/>€ !
+	Le solde de ${ proprietaire } est ${ solde }€ !
 </body>
 </html>
