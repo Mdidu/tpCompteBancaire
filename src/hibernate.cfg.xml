@@ -9,7 +9,7 @@
         <property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:XE</property>
         <property name="hibernate.connection.username">AFPA</property>
         <property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
-        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
         <mapping class="persistance.entities.Compte" />
     </session-factory>
 </hibernate-configuration>
