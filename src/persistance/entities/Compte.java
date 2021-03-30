@@ -5,19 +5,14 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import persistance.dao.CompteDaoImpl;
-
 @Entity
 @Table(name = "COMPTE", schema = "AFPA")
 public class Compte {
 	private int numCompte;
 	private float solde;
 	private String proprietaire;
-
-//	private CompteDaoImpl compteDaoImpl = new CompteDaoImpl();
 	
 	public Compte() {
-//		find(numCompte);
 	}
 	
 	@Id
@@ -47,11 +42,5 @@ public class Compte {
 	public void setProprietaire(String proprietaire) {
 		this.proprietaire = proprietaire;
 	}
-	
-//	public void find(int numCompte) {
-//
-//		solde = compteDaoImpl.findById(numCompte).getSolde();
-////		proprietaire = compteDaoImpl.findById(numCompte).getProprietaire();
-//	}
 
 }
